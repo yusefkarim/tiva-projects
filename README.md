@@ -7,18 +7,22 @@
 ### **Goals**:
 
 - [x] Learn how to read datasheets effectively
-- [ ] Use C at a lower level than I currently do 
+- [x] Use C at a lower level than I currently do 
 - [x] Learn about the ports on the TM4C123
-- [ ] Learn basic IO using both low-level C and Assembly
-- [ ] Learn basic embedded systems design and development processes
-- [ ] Learn how to properly troubleshoot and debug electronics and relevant code
-- [ ] Finite State Machines
+- [x] Learn basic IO using both low-level C and Assembly
+- [x] Learn basic embedded systems design and development processes
+- [x] Learn how to properly troubleshoot and debug electronics and relevant code
+- [x] Finite State Machines
+- [ ] Learn UART and other communication with TM4C
+- [ ] Learn ADC and DAC with TM4C
+- [ ] Finish all labs within the two courses
 
 ### **Final Goal**:
-**(WIP)** To think of a better final goal
+Finish the final lab where I make my own game from scratch using the TM4C123 development board
 
 
 ## **Resources used**:
 
-- [edX embedded systems course](https://www.edx.org/course/embedded-systems-shape-world-utaustinx-ut-6-10x)
+- [edX embedded systems course: Part I](https://www.edx.org/course/embedded-systems-shape-world-utaustinx-ut-6-10x)
+- [edX embedded systems course: Part II](https://www.edx.org/course/embedded-systems-shape-world-multi-utaustinx-ut-6-20x)
   
