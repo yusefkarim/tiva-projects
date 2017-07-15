@@ -1,0 +1,4 @@
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/build/CMakeFiles/rebuild_cache.dir
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/build/CMakeFiles/edit_cache.dir
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/build/CMakeFiles/flash.dir
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/build/CMakeFiles/linux_blinky.axf.dir
