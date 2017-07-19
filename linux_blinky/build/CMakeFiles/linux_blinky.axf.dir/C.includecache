@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/inc/tm4c123gh6pm.h
+
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/src/blinky.c
+../inc/tm4c123gh6pm.h
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/inc/tm4c123gh6pm.h
+stdint.h
+-
+
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/src/startup.c
+stdint.h
+-
+inc/hw_nvic.h
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/src/inc/hw_nvic.h
+inc/hw_types.h
+/home/fenrir/Documents/tiva-projects/learning-tm4c123/linux_blinky/src/inc/hw_types.h
+
+/home/fenrir/Documents/tiva-projects/tivaware/inc/hw_nvic.h
+
+/home/fenrir/Documents/tiva-projects/tivaware/inc/hw_types.h
+
