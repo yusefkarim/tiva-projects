@@ -1,5 +1,5 @@
-/* This program will toggle the onboard LED if the button is pressed or keep it
- * off if button is released */
+/* This program will toggle the onboard LED if SW1 is pressed, and keep the
+ * onboard LED on if SW2 is pressed or keep it off if buttons are released */
 
 //By: Yusef Karim
 //July 14, 2017
@@ -22,7 +22,6 @@ int main(void)
     PLL_Init();
     SysTick_Init();
     PortFInit();
-    //GPIO_PORTF_DATA_R |= 0x04;
 
     while(1)
     {
@@ -96,7 +95,7 @@ void SysTick_Init(void)
 //Uses SysTick to count down 1ms*(passed value)
 void SysTick_Wait1ms(unsigned long ms)
 {
-    //Clock is set to 80Mhz, each Systick takes 1/80MHz = 12.5ns
+    //Clock is set to 80MHz, each Systick takes 1/80MHz = 12.5ns
     //To get 1ms count down delay, take (1ms)/(12.5ns)
     unsigned long delay = 80000;
     unsigned long i;

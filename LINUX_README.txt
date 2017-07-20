@@ -1,7 +1,9 @@
-#This is a guide to get cmake and opencd working with the TM4C123
+#This is a WIP guide to get cmake and lm4flash working for the TM4C123
 
 ## STEP ONE ##
 
+#Get make and cmake if you don't already have
+pacman -S make cmake 
 #Get arm gcc toolchain from package manager
 pacman -S arm-none-eabi-gcc arm-none-eabi-newlib
 
@@ -18,3 +20,28 @@ make
 
 ## STEP THREE ##
 
+#Install lm4flash from AUR or manually from github
+
+#This is how my directory is setup
+.
+├── build
+├── CMakeLists.txt
+├── inc
+│   └── tm4c123gh6pm.h
+├── src
+│   ├── blinky.c
+│   └── startup.c
+├── tiva.specs
+├── tm4c123g.cmake
+└── tm4c123g.ld
+
+
+## STEP FOUR ##
+
+#We can now build our project
+cd build
+cmake ..
+make
+sudo make flash
+
+#Our blinky progam should now be on the board, woohoo!
