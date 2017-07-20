@@ -105,7 +105,7 @@ void SysTick_Handler(void)
 		
 		//If previous input was off and current input is high
 		if((previous_input == 0x00) && (input == 0x08))
-			nextState ^= 1;	//Toggle next state
+			next_state ^= 1;	//Toggle next state
 		
 		if(next_state == 1)
 			GPIO_PORTA_DATA_R ^= 0x04;	//Toggle PA2
