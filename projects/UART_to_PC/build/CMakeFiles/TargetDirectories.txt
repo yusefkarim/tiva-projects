@@ -1,0 +1,4 @@
+/home/fenrir/tiva-projects/learning-tm4c123/Other/UART_to_PC/build/CMakeFiles/rebuild_cache.dir
+/home/fenrir/tiva-projects/learning-tm4c123/Other/UART_to_PC/build/CMakeFiles/edit_cache.dir
+/home/fenrir/tiva-projects/learning-tm4c123/Other/UART_to_PC/build/CMakeFiles/flash.dir
+/home/fenrir/tiva-projects/learning-tm4c123/Other/UART_to_PC/build/CMakeFiles/UART_to_PC.axf.dir

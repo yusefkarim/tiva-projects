@@ -33,11 +33,6 @@
 #include "tm4c123gh6pm.h"
 #include "UART.h"
 
-unsigned char parseDigit(unsigned long n, int place, int leadingZero){	
-	int numHasStarted = place < n;
-	unsigned char digit = n % (place*10) / place;             
-	return digit + 0x20 + ((( digit > 0) || numHasStarted || leadingZero || place==1) * 0x10); 
-}
 
 //------------UART_Init------------
 // Initialize the UART for 115200 baud rate (assuming 80 MHz UART clock),
