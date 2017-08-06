@@ -1,3 +1,10 @@
+//Author: Yusef Karim
+//Project: UART_to_PC
+
+//This program enables UART0 and allows serial communication via usb
+//The user can change the on-board LED by sending specific characters via
+//serial connection
+
 #include "../inc/uart.h"
 
 //For PortF GPIO Pins
