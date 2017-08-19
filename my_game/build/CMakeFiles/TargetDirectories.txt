@@ -1,4 +1,0 @@
-/home/fenrir/tiva-projects/learning-tm4c123/my_game/build/CMakeFiles/rebuild_cache.dir
-/home/fenrir/tiva-projects/learning-tm4c123/my_game/build/CMakeFiles/edit_cache.dir
-/home/fenrir/tiva-projects/learning-tm4c123/my_game/build/CMakeFiles/flash.dir
-/home/fenrir/tiva-projects/learning-tm4c123/my_game/build/CMakeFiles/storm_the_castle.axf.dir

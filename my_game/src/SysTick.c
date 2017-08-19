@@ -10,7 +10,8 @@ void SysTick_Init(unsigned long reload)
     NVIC_ST_CTRL_R = 0;									//Disable SysTick during setup
     NVIC_ST_RELOAD_R = reload - 1;						//Number of counts to wait
     NVIC_ST_CURRENT_R = 0;								//Any write clears current
-    NVIC_SYS_PRI3_R &= 0x00FFFFFF;				        //Give SysTick Priority 0
+    //Give SysTick Priority 2
+    NVIC_SYS_PRI3_R = (NVIC_SYS_PRI3_R&0x00FFFFFF) | 0x40000000;
     //Enable Systick with core clock and interrupts
     //NVIC_ST_CTRL_ENABLE(bit0)+NVIC_ST_CTRL_CLK_SRC(bit1)+NVIC_ST_CTRL_INTEN(bit2)
     NVIC_ST_CTRL_R |= 0x07;

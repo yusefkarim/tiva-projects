@@ -39,7 +39,8 @@ static void IntDefaultHandler(void);
 //***********************My Declared Vector Functions******************
 //Defined below as a weak function, therefore it will be overridden by non-weak
 //functions in other *.c files
-extern void SysTickHandler(void);
+extern void SysTick_Handler(void);
+extern void PortE_Handler(void);
 
 //*****************************************************************************
 //
@@ -80,12 +81,12 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // Debug monitor handler
     0,                                      // Reserved
     IntDefaultHandler,                      // The PendSV handler
-    SysTickHandler,                         // The SysTick handler
+    SysTick_Handler,                        // The SysTick handler
     IntDefaultHandler,                      // GPIO Port A
     IntDefaultHandler,                      // GPIO Port B
     IntDefaultHandler,                      // GPIO Port C
     IntDefaultHandler,                      // GPIO Port D
-    IntDefaultHandler,                      // GPIO Port E
+    PortE_Handler,                          // GPIO Port E
     IntDefaultHandler,                      // UART0 Rx and Tx
     IntDefaultHandler,                      // UART1 Rx and Tx
     IntDefaultHandler,                      // SSI0 Rx and Tx
@@ -338,9 +339,7 @@ FaultISR(void)
 static void
 IntDefaultHandler(void)
 {
-    //
     // Go into an infinite loop.
-    //
     while(1)
     {
     }
@@ -348,10 +347,8 @@ IntDefaultHandler(void)
 
 
 //***********************My Defined Vector Functions******************
-//Set as weak, so it can be overridden when used
- __attribute__((weak)) void SysTickHandler(void)
-{
-    // Go into an infinite loop.
-    while(1){}
-}
+//Set as weak, so they can be overridden when used
 
+__attribute__((weak)) void SysTick_Handler(void) { while(1){} }
+
+__attribute__((weak)) void PortE_Handler(void) { while (1){} }

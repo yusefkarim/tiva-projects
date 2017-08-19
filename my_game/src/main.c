@@ -9,19 +9,13 @@
 //When a button is pressed, this is set to 1, moves from startup screen
 unsigned char GameStart = 0;
 
+//----------------------------Interrupt Handlers---------------------------//
+void SysTick_Handler(void);
+void PortE_Handler(void);
+
 void PortF_Init(void);
 
-void SysTickHandler(void)
-{
-    if((WalkButton || BlockButton || AttackButton) && (GameStart == 0))
-    {
-        Nokia5110_Clear();  //Clear start screen
-        GameStart = 1;      //Let interrupt know the game has started
-    }
-    GPIO_PORTF_DATA_R ^= 0x02;
-}
-
-
+//-----------------------------Main Program--------------------------------//
 int main(void)
 {
     PLL_Init();                     //80 Mhz Clock
@@ -53,6 +47,40 @@ int main(void)
     }
 }
 
+
+void SysTick_Handler(void)
+{
+    if(GameStart)
+    {
+        //Start game, dur
+    }
+}
+
+void PortE_Handler(void)
+{
+    if((WalkButton || BlockButton || AttackButton) && (GameStart == 0))
+    {
+        Nokia5110_Clear();  //Clear start screen
+        GameStart = 1;      //Let interrupt know the game has started
+    }
+
+    //Reads interrupt status, if interrupt detected does something
+    if(WalkButton)
+    {
+        WalkButtonClear;    //Acknowledges and clears respective interrupt flag
+        GPIO_PORTF_DATA_R ^= 0x04;
+    }
+    else if(BlockButton)
+    {
+        BlockButtonClear;
+        GPIO_PORTF_DATA_R ^= 0x02;
+    }
+    else if(AttackButton)
+    {
+        AttackButtonClear;
+        GPIO_PORTF_DATA_R ^= 0x08;
+    }
+}
 
 //Setup port F
 //------------PortF_Init------------//
