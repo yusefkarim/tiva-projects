@@ -13,9 +13,9 @@
 - [x] Learn basic embedded systems design and development processes
 - [x] Learn how to properly troubleshoot and debug electronics and relevant code
 - [x] Finite State Machines
-- [ ] Learn UART and other communication with TM4C
-- [ ] Learn ADC and DAC with TM4C
-- [ ] Finish all labs within the two courses
+- [x] Learn UART and other communication with TM4C
+- [x] Learn ADC and DAC with TM4C
+- [x] Finish all labs within the two courses
 
 ### **Final Goal**:
 Finish the final lab where I make my own game from scratch using the TM4C123 development board
