@@ -2,7 +2,9 @@
 
 ### **Development Board**: [TI TM4C123GXL Launchpad](http://www.ti.com/tool/ek-tm4c123gxl) 
 
-### **IDE**: [Keil ARM](http://www2.keil.com/mdk5) , will switch to open-source tool soon
+### **IDE**: [Keil ARM](http://www2.keil.com/mdk5)
+
+## **Certificate**: [https://courses.edx.org/certificates/bbdf78e8bf61476fb22f742f8bc6d1f9](https://courses.edx.org/certificates/bbdf78e8bf61476fb22f742f8bc6d1f9)
 
 ### **Goals**:
 
