@@ -4,6 +4,7 @@
 
 ### **IDE**: [Keil ARM](http://www2.keil.com/mdk5)
 
+<!-- Can also be found at docs/UT.6.10x_Certificate.png -->
 ## **Certificate**: [https://courses.edx.org/certificates/bbdf78e8bf61476fb22f742f8bc6d1f9](https://courses.edx.org/certificates/bbdf78e8bf61476fb22f742f8bc6d1f9)
 
 ### **Goals**:
