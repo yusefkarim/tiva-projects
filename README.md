@@ -1,4 +1,10 @@
-# **Learning lower-level embedded systems**
+# 📁 Archived
+
+Checkout the [firmware-playground](https://github.com/yusefkarim/firmware-playground) for more up-to-date fun 🛝.
+
+---
+
+## Learning lower-level embedded systems
 
 ### **Development Board**: [TI TM4C123GXL Launchpad](http://www.ti.com/tool/ek-tm4c123gxl) 
 
